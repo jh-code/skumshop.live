@@ -22,11 +22,5 @@ install:
 script:
   - npm run ci
 
-deploy:
-  local-dir: dist/skumshop
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  keep_history: true
-  on:
-    branch: master
+after_success:
+  - scp -r ./dist/skumshop $SFTP_USER:$SFTP_PASS@$SERVER_IP:$SERVER_PATH
