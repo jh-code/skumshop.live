@@ -1,0 +1,32 @@
+dist: trusty
+sudo: false
+
+language: node_js
+node_js:
+  - '8'
+
+addons:
+  apt:
+    sources:
+      - google-chrome
+    packages:
+      - google-chrome-stable
+
+cache:
+  directories:
+    - ./node_modules
+
+install:
+  - npm install
+
+script:
+  - npm run ci
+
+deploy:
+  local-dir: dist/skumshop
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
