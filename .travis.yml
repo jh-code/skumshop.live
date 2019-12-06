@@ -23,4 +23,4 @@ script:
   - npm run ci
 
 after_success:
-  - scp -r ./dist/skumshop $SFTP_USER:$SFTP_PASS@$SERVER_IP:$SERVER_PATH
+  - scp -r ./dist/skumshop ${SFTP_USER}:${SFTP_PASS}@${SERVER_IP}:${SERVER_PATH}
