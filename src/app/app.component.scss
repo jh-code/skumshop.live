@@ -34,7 +34,7 @@ nav {
             color: white;
             text-decoration: none;
 
-            &:hover {
+            &:hover, &.active {
                 border-bottom: #ee4266 2px solid;
             }
         }
