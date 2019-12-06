@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap');
+
+@import 'variables';
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/utilities";
+
+html, body {
+    background-color: #190b28;
+}
+
+body {
+    font-family: 'Share Tech Mono', monospace;
+    color: white;
+}
+
+a {
+    color: #ee4266;
+}
+
+.lead {
+    font-size: 1.1em;
+}
+
+.heading {
+    font-family: 'Odibee Sans', cursive;
+    text-transform: uppercase;
+}
+
+.text-normal {
+    font-weight: normal;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.primary {
+    color: #564787;
+}
+
+.secondary {
+    color: #ffd23f;
+}
+
+.accent {
+    color: #ee4266;
+}
